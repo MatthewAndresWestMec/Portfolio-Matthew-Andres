@@ -13,7 +13,18 @@ a {
     background-color: #dfd6c5;
     color: black;
     display:inline-block;
+    margin: .5vh;
     height: 5vh;
-    width: 11vh;
+    width: 10vh;
     border-radius: 20px;
 }
+
+h1{
+    font-size: 60px;
+    color:white;
+}
+h3{
+    color: white;
+    font-size: 25px;
+}
+
