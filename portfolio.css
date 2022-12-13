@@ -1,30 +1,156 @@
 body{
     background-color: #0b0a0b;
+    }
+
+.navbar{
+    z-index: 100;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+.homeMain {
+    background-color: #0b0a0b;
+    position: relative;
+    position: relative;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "heading heading heading"
+        ". myinfo picture"
+       
+    ;
 }
 header{
+    grid-area: heading;
     text-align: center;
 }
 a {
     font-size: 3vh;
     line-height: 4.2vh;
     text-decoration: black;
-    padding: 2px 0;
+    padding: 1px 0;
     text-align:center;
     background-color: #dfd6c5;
     color: black;
     display:inline-block;
     margin: .5vh;
     height: 5vh;
-    width: 10vh;
+    width: 11vh;
     border-radius: 20px;
 }
 
 h1{
-    font-size: 60px;
+    font-size:80px;
     color:white;
+        margin: 5px;
 }
 h3{
     color: white;
     font-size: 25px;
+
 }
 
+.myinfo{
+    grid-area: myinfo;
+    width: 85vh;
+    position: relative;
+    right:30vh;
+    top: 8vh;
+}
+
+.picture{
+    grid-area: picture;
+    width: 55vh;
+    border-radius: 20px;
+}
+
+.socials{
+    display: inline;
+    list-style-type: none;
+    padding: 3px;
+    margin: 0;
+}
+
+/* Work CSS */
+.containerWork {
+    background-color: #0b0a0b;
+    position: relative;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "heading heading heading"
+        "mainWork mainWork mainWork"
+        ". . ."
+    ;
+}
+
+.mainWork{
+    margin-top: 4vh;
+    background-color: black;
+    height: 120vh;
+    border: 2px solid #dfd6c5;
+    border-radius: 20px;
+    position: relative;
+    display: grid;
+    width: 99%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 5fr;
+    grid-template-areas:
+        ". nameheading nameheading."
+        ". nameheading2 nameheading2 ."
+        "b1 b2 b3 b4"
+        ". . . ."
+    ;
+}
+
+.nameWork{
+    grid-area: nameheading;
+    color: white;
+    text-align: center;
+    padding:1px;
+    font-size: 4vh;
+}
+
+.workHeader {
+    grid-area: nameheading2;
+    color: white;
+    text-align: center;
+    margin-top: 0vh;
+    padding: 4px;
+}
+
+.workBoxes{
+    width:10vh;
+    height: 10vh;
+    background-color: blue;
+    border: 2px solid white;
+}
+b1{
+    grid-area: b1;
+}
+
+b2{
+    grid-area: b2;
+}
+
+b3{
+    grid-area: b3;
+}
+
+b4{
+    grid-area: b4;
+}
+/* Contact CSS */
+
+
+
+
+/* Resume CSS */
+
+
+/* Skills CSS */
