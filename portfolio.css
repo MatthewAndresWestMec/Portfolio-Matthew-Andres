@@ -1,5 +1,6 @@
 body{
-    background-color: #0b0a0b;
+    background-color: rgb(34, 32, 34);
+    margin:0px;
     }
 
 .navbar{
@@ -10,7 +11,6 @@ body{
 }
 
 .homeMain {
-    background-color: #0b0a0b;
     position: relative;
     position: relative;
     display: grid;
@@ -76,35 +76,36 @@ h3{
 
 /* Work CSS */
 .containerWork {
-    background-color: #0b0a0b;
     position: relative;
     display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: auto;
+    height: 90vh;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 5fr;
     grid-template-areas:
-        "heading heading heading"
-        "mainWork mainWork mainWork"
-        ". . ."
+        "heading heading heading heading heading"
+        ". mainWork mainWork mainWork ."
     ;
 }
 
 .mainWork{
-    margin-top: 4vh;
+    background-color:rgb(34, 32, 34, 0.5);
+    margin: 0vh;
+    grid-area: mainWork;
+    position: relative;
+    top: 1vh;
     background-color: black;
-    height: 120vh;
+    height: 80vh;
     border: 2px solid #dfd6c5;
-    border-radius: 20px;
     position: relative;
     display: grid;
-    width: 99%;
+    width: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 5fr 5fr;
     grid-template-areas:
         ". nameheading nameheading."
         ". nameheading2 nameheading2 ."
         "b1 b2 b3 b4"
-        ". . . ."
+        "b5 b6 b7 b8"
     ;
 }
 
@@ -114,6 +115,7 @@ h3{
     text-align: center;
     padding:1px;
     font-size: 4vh;
+    margin:1vh;
 }
 
 .workHeader {
@@ -121,29 +123,65 @@ h3{
     color: white;
     text-align: center;
     margin-top: 0vh;
-    padding: 4px;
+    padding: 1px;
+    margin: 0vh;
+    padding-bottom: .5vh;
 }
 
-.workBoxes{
-    width:10vh;
-    height: 10vh;
-    background-color: blue;
+.content{
+    align-items: center;
+    width: 90%;
     border: 2px solid white;
+    left: 4%;
+    position: relative;
 }
-b1{
+
+.b1{
     grid-area: b1;
+    text-align: center;
+    justify-content: center;
+    color: white;
 }
 
-b2{
+.b2{
     grid-area: b2;
+        text-align: center;
+        color: white;
 }
 
-b3{
+.b3{
     grid-area: b3;
+  text-align: center;
+        color: white;
 }
 
-b4{
+.b4{
     grid-area: b4;
+        text-align: center;
+        color: white;
+}
+.b5 {
+    grid-area: b5;
+        text-align: center;
+        color: white;
+}
+
+.b6 {
+    grid-area: b6;
+        text-align: center; 
+        color: white;
+}
+
+.b7 {
+    grid-area: b7;
+        text-align: center;  
+        color: white;
+}
+
+.b8 {
+    grid-area: b8;
+        text-align: center;      
+        color: white;
 }
 /* Contact CSS */
 
