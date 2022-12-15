@@ -1,0 +1,134 @@
+
+body {
+    background-color: rgb(34, 32, 34);
+    margin: 0px;
+}
+
+.navbar {
+    z-index: 100;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+header {
+    grid-area: heading;
+    text-align: center;
+}
+
+a {
+    font-size: 3vh;
+    line-height: 4.2vh;
+    text-decoration: black;
+    padding: 1px 0;
+    text-align: center;
+    background-color: #dfd6c5;
+    color: black;
+    display: inline-block;
+    margin: .5vh;
+    height: 5vh;
+    width: 11vh;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 80px;
+    color: white;
+    margin: 5px;
+}
+
+h3 {
+    color: white;
+    font-size: 25px;
+
+}
+
+.containerContact {
+    position: relative;
+    display: grid;
+    height: 90vh;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas:
+        "heading heading heading heading heading"
+        ". mainContact mainContact mainContact ."
+    ;
+}
+
+.contactMain {
+    background-color: rgb(34, 32, 34, 0.5);
+    margin: 0vh;
+    grid-area: mainContact;
+    position: relative;
+    top: 1vh;
+    background-color: black;
+    height: 80vh;
+    border: 2px solid #dfd6c5;
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 2fr 4fr;
+    grid-template-areas:
+        ". contactHeader1 contactHeader1."
+        ". contactHeader2 contactHeader2 ."
+        "myAddress myAddress mySocials mySocials"
+        "myEmail myEmail myNumber myNumber"
+        "messages messages messages messages"
+    ;
+}
+
+.contactHeader1 {
+    grid-area: contactHeader1;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    font-size: 4vh;
+    margin: 1vh;
+}
+
+.contactHeader2 {
+    grid-area: contactHeader2;
+    color: white;
+    text-align: center;
+    margin-top: 0vh;
+    padding: 1px;
+    margin: 0vh;
+    padding-bottom: .5vh;
+}
+
+.myAddress {
+    grid-area: myAddress;
+    border: 2px solid #dfd6c5;
+}
+
+.mySocials {
+    grid-area: mySocials;
+    border: 2px solid #dfd6c5;
+}
+
+.myEmail {
+    grid-area: myEmail;
+    border: 2px solid #dfd6c5;
+}
+
+.myNumber {
+    grid-area: myNumber;
+    border: 2px solid #dfd6c5;
+}
+
+.messages {
+    grid-area: messages;
+    border: 2px solid #dfd6c5;
+    background-color: rgb(34, 32, 34, 0.5);
+    position: relative;
+    background-color: black;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr ;
+    grid-template-areas:
+        "nameInput emailInput."
+        "messageInput"
+    ;
+}

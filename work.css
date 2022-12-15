@@ -1,77 +1,45 @@
-body{
+body {
     background-color: rgb(34, 32, 34);
-    margin:0px;
-    }
+    margin: 0px;
+}
 
-.navbar{
+.navbar {
     z-index: 100;
     align-items: center;
     position: sticky;
     top: 0px;
 }
 
-.homeMain {
-    position: relative;
-    position: relative;
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "heading heading heading"
-        ". myinfo picture"
-       
-    ;
-}
-header{
+header {
     grid-area: heading;
     text-align: center;
 }
+
 a {
     font-size: 3vh;
     line-height: 4.2vh;
     text-decoration: black;
     padding: 1px 0;
-    text-align:center;
+    text-align: center;
     background-color: #dfd6c5;
     color: black;
-    display:inline-block;
+    display: inline-block;
     margin: .5vh;
     height: 5vh;
     width: 11vh;
     border-radius: 20px;
 }
 
-h1{
-    font-size:80px;
-    color:white;
-        margin: 5px;
+h1 {
+    font-size: 80px;
+    color: white;
+    margin: 5px;
 }
-h3{
+
+h3 {
     color: white;
     font-size: 25px;
 
-}
-
-.myinfo{
-    grid-area: myinfo;
-    width: 85vh;
-    position: relative;
-    right:30vh;
-    top: 8vh;
-}
-
-.picture{
-    grid-area: picture;
-    width: 55vh;
-    border-radius: 20px;
-}
-
-.socials{
-    display: inline;
-    list-style-type: none;
-    padding: 3px;
-    margin: 0;
 }
 
 /* Work CSS */
@@ -87,8 +55,8 @@ h3{
     ;
 }
 
-.mainWork{
-    background-color:rgb(34, 32, 34, 0.5);
+.mainWork {
+    background-color: rgb(34, 32, 34, 0.5);
     margin: 0vh;
     grid-area: mainWork;
     position: relative;
@@ -109,13 +77,13 @@ h3{
     ;
 }
 
-.nameWork{
+.nameWork {
     grid-area: nameheading;
     color: white;
     text-align: center;
-    padding:1px;
+    padding: 1px;
     font-size: 4vh;
-    margin:1vh;
+    margin: 1vh;
 }
 
 .workHeader {
@@ -128,7 +96,7 @@ h3{
     padding-bottom: .5vh;
 }
 
-.content{
+.content {
     align-items: center;
     width: 90%;
     border: 2px solid white;
@@ -136,52 +104,53 @@ h3{
     position: relative;
 }
 
-.b1{
+.b1 {
     grid-area: b1;
     text-align: center;
     justify-content: center;
     color: white;
 }
 
-.b2{
+.b2 {
     grid-area: b2;
-        text-align: center;
-        color: white;
+    text-align: center;
+    color: white;
 }
 
-.b3{
+.b3 {
     grid-area: b3;
-  text-align: center;
-        color: white;
+    text-align: center;
+    color: white;
 }
 
-.b4{
+.b4 {
     grid-area: b4;
-        text-align: center;
-        color: white;
+    text-align: center;
+    color: white;
 }
+
 .b5 {
     grid-area: b5;
-        text-align: center;
-        color: white;
+    text-align: center;
+    color: white;
 }
 
 .b6 {
     grid-area: b6;
-        text-align: center; 
-        color: white;
+    text-align: center;
+    color: white;
 }
 
 .b7 {
     grid-area: b7;
-        text-align: center;  
-        color: white;
+    text-align: center;
+    color: white;
 }
 
 .b8 {
     grid-area: b8;
-        text-align: center;      
-        color: white;
+    text-align: center;
+    color: white;
 }
 
 /* Resume CSS */
