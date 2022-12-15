@@ -74,7 +74,7 @@ h3 {
         ". contactHeader2 contactHeader2 ."
         "myAddress myAddress mySocials mySocials"
         "myEmail myEmail myNumber myNumber"
-        "messages messages messages messages"
+        "messageBox messageBox messageBox messageBox"
     ;
 }
 
@@ -100,35 +100,55 @@ h3 {
 .myAddress {
     grid-area: myAddress;
     border: 2px solid #dfd6c5;
+    color: white;
 }
 
 .mySocials {
     grid-area: mySocials;
     border: 2px solid #dfd6c5;
+    color: white;
 }
 
 .myEmail {
     grid-area: myEmail;
     border: 2px solid #dfd6c5;
+    color: white;
 }
 
 .myNumber {
     grid-area: myNumber;
     border: 2px solid #dfd6c5;
+    color: white;
 }
 
-.messages {
-    grid-area: messages;
+.messageBox {
+    height: auto;
+    grid-area: messageBox;
     border: 2px solid #dfd6c5;
-    background-color: rgb(34, 32, 34, 0.5);
-    position: relative;
-    background-color: black;
     display: grid;
-    width: 100%;
     grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr ;
+    grid-template-rows: 1fr 2fr;
     grid-template-areas:
-        "nameInput emailInput."
-        "messageInput"
+        "input1 input2"
+        "input3 input3"
     ;
+}
+
+.nameInput{
+        grid-area: input1;
+        border: 2px solid #dfd6c5;
+}
+
+.emailInput{
+    grid-area: input2;
+        border: 2px solid #dfd6c5;
+}
+
+.messageInput{
+    grid-area: input3;
+        border: 2px solid #dfd6c5;
+}
+
+p{
+        text-align: center;
 }
